@@ -18,11 +18,11 @@ function DefaultLayout({ children }) {
       icon: "ri-file-list-line",
       path: "/bookings",
     },
-    // {
-    //   name: "Forum",
-    //   icon: "ri-file-list-line",
-    //   path: "/forum",
-    // },
+    {
+      name: "Live Location",
+      icon: "ri-map-pin-line",
+      path: "/livelocation",
+    },
     // {
     //   name: "Profile",
     //   icon: "ri-user-line",
@@ -55,11 +55,11 @@ function DefaultLayout({ children }) {
       path: "/admin/users",
       icon: "ri-user-line",
     },
-    // {
-    //   name: "Bookings",
-    //   path: "/admin/bookings",
-    //   icon: "ri-file-list-line",
-    // },
+    {
+      name: "Tracker",
+      path: "/admin/tracker",
+      icon: "ri-user-location-fill",
+    },
     {
       name: "Logout",
       path: "/logout",

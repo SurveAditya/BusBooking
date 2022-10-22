@@ -10,8 +10,10 @@ import { useSelector } from "react-redux";
 import AdminHome from "./pages/Admin/AdminHome";
 import AdminBuses from "./pages/Admin/AdminBuses";
 import AdminUsers from "./pages/Admin/AdminUsers";
+import AdminLocation from "./pages/Admin/AdminLocation";
 import BookNow from "./pages/BookNow";
 import Bookings from "./pages/Bookings";
+import LiveLocation from './pages/LiveLocation';
 function App() {
   const { loading } = useSelector((state) => state.alerts);
   return (
@@ -43,7 +45,22 @@ function App() {
               </ProtectedRoute>
             }
           />
-
+          <Route
+            path="/admin/tracker"
+            element={
+              <ProtectedRoute>
+                <AdminLocation />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/livelocation"
+            element={
+              <ProtectedRoute>
+                <LiveLocation />
+              </ProtectedRoute>
+            }
+          />
           <Route
             path="/admin/users"
             element={

@@ -1,0 +1,24 @@
+.bn3637 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 2rem;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    /* backface-visibility: hidden;
+    border: 0.3rem solid transparent; */
+    border-radius: 3rem;
+  }
+  .bn38 {
+    /* border-color: transparent; */
+    transition: background-color 0.3s ease-in-out;
+  }
+    
+  .bn38:hover {
+    background-color: #000000;
+    color: rgb(255, 246, 246);
+  }
+
