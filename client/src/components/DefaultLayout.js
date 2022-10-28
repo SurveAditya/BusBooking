@@ -109,7 +109,7 @@ function DefaultLayout({ children }) {
         </div>
       </div>
       <div className="body">
-        <div className="header">
+        {/* <div className="header">
           {collapsed ? (
             <i
               class="ri-menu-2-fill"
@@ -121,7 +121,7 @@ function DefaultLayout({ children }) {
               onClick={() => setCollapsed(!collapsed)}
             ></i>
           )}
-        </div>
+        </div> */}
         <div className="content">{children}</div>
       </div>
     </div>

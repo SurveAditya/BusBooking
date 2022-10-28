@@ -56,7 +56,7 @@ function loop(name) {
       let popup = marker.bindPopup(`<b>${name}</b>`);
       l = setInterval(() => {
           navigator.geolocation.getCurrentPosition((pos) => {
-            mapInfo.loc.innerHTML = "Latitude: " + pos.coords.latitude + "<br>Longitude: " + pos.coords.longitude;
+            // mapInfo.loc.innerHTML = "Latitude: " + pos.coords.latitude + "<br>Longitude: " + pos.coords.longitude;
             mapInfo.map.setView([pos.coords.latitude, pos.coords.longitude], 15);
             marker.setLatLng([pos.coords.latitude, pos.coords.longitude]).update();
             popup.openPopup();
@@ -73,7 +73,7 @@ function loop(name) {
           try{
             mapInfo.map.removeLayer(marker)
             mapInfo.map.setView([19.0760, 72.8777], 10);
-            mapInfo.loc.innerHTML = "STOPPED";
+            // mapInfo.loc.innerHTML = "STOPPED";
             
             clearInterval(l);
           }
